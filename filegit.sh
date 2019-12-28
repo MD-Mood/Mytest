@@ -10,6 +10,6 @@
 te=$(date +%s%N)
  size1=$(stat --format=%s "${1%.*}.docx")
 
-    echo " $((($te - $ts)/1000000))   $size1  $size2" >> git_results.txt 
+    echo " $((($te - $ts)/1000000))   $size1  $size2" >> git_results1.txt 
 
 
