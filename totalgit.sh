@@ -1,6 +1,6 @@
 
 
-for FILE in /home/mahmoud/Mytest/*.docx
+for FILE in /home/mahmoud/Mytest/Group4/*.docx
 do
        
 /usr/bin/time   -o temp.txt -f  "%M  %K   %P"  ./filegit.sh $FILE 
