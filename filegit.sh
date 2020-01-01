@@ -3,9 +3,9 @@
     ts=$(date +%s%N)    
     bname=$(basename "$1")
     y=${bname%.docx}
-    git add .	
-    git commit -m "test"
-    git push --set-upstream origin master
+    git add --all
+    git commit -m "test" "$1"
+    git push 
 
 te=$(date +%s%N)
  size1=$(stat --format=%s "${1%.*}.docx")
