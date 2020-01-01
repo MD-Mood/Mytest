@@ -3,7 +3,7 @@
     ts=$(date +%s%N)    
     bname=$(basename "$1")
     y=${bname%.docx}
-    git add --all
+    git add "$1"
     git commit -m "test" "$1"
     git push 
 
